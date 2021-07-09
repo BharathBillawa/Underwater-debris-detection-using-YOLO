@@ -21,7 +21,8 @@ And you can get the trained weights from [here](https://drive.google.com/file/d/
     ./darknet detector test data/yolov4.data cfg/yolov4_custom_test.cfg yolov4_custom_train_best.weights {img_path} -dont_show
 Replace `{img_path}` with the actual path to the image to be tested. Model will output the results as `prediction.jpg`, which can be changes by specifying the output file name/ location.
 
-![yolo_detect8](https://user-images.githubusercontent.com/11042326/125073609-85e84f80-e0bc-11eb-845d-cf3e8e3fcb77.png) ![yolo_detect1](https://user-images.githubusercontent.com/11042326/125073813-cf389f00-e0bc-11eb-8f4d-b57c77efee99.png )
+![yolo_detect8](https://user-images.githubusercontent.com/11042326/125100126-0ae16200-e0d9-11eb-91a7-97a4e005130e.png) ![yolo_detect1](https://user-images.githubusercontent.com/11042326/125100217-22204f80-e0d9-11eb-8e39-db8db40ac66b.png)
+
 #### For videos
 
     ./darknet detector demo data/yolov4.data cfg/yolov4_custom_test.cfg backup/yolov4_custom_train_best.weights {vid_path} -out_filename {output_path} -dont_show -map
