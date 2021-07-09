@@ -13,13 +13,15 @@ In the darknet detector, use the following configuration and data files:
 >  - classes.names
 >  - yolov4.data
 
+And you can get the trained weights from [here](https://drive.google.com/file/d/1-Fw02TTavewuI1rvgwbTPlIThFHnTP-V/view?usp=sharing).
+
 ### Examples:
 #### For Images
 
     ./darknet detector test data/yolov4.data cfg/yolov4_custom_test.cfg yolov4_custom_train_best.weights {img_path} -dont_show
 Replace `{img_path}` with the actual path to the image to be tested. Model will output the results as `prediction.jpg`, which can be changes by specifying the output file name/ location.
 
-![yolo_detect8](https://user-images.githubusercontent.com/11042326/125073609-85e84f80-e0bc-11eb-845d-cf3e8e3fcb77.png =250x) ![yolo_detect1](https://user-images.githubusercontent.com/11042326/125073813-cf389f00-e0bc-11eb-8f4d-b57c77efee99.png =333x)
+![yolo_detect8](https://user-images.githubusercontent.com/11042326/125073609-85e84f80-e0bc-11eb-845d-cf3e8e3fcb77.png) ![yolo_detect1](https://user-images.githubusercontent.com/11042326/125073813-cf389f00-e0bc-11eb-8f4d-b57c77efee99.png )
 #### For videos
 
     ./darknet detector demo data/yolov4.data cfg/yolov4_custom_test.cfg backup/yolov4_custom_train_best.weights {vid_path} -out_filename {output_path} -dont_show -map
